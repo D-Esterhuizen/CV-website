@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Digital</title>
+    <style>
+        
+        /* Carousel container */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+/* Carousel inner wrapper */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    animation: slide 12s infinite;
+}
+
+/* Individual slides */
+.slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 800px;
+}
+
+/* Manual navigation via radio buttons */
+#slide1:checked ~ .carousel-inner {
+    transform: translateX(0%);
+}
+#slide2:checked ~ .carousel-inner {
+    transform: translateX(-100%);
+}
+#slide3:checked ~ .carousel-inner {
+    transform: translateX(-200%);
+}
+#slide4:checked ~ .carousel-inner {
+    transform: translateX(-300%);
+}
+
+/* Carousel dots */
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-dots label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.carousel-dots label:hover {
+    background-color: #333;
+}
+
+        /* Input for manual navigation */
+        #slide1:checked ~ .carousel-inner {
+            animation: none;
+            transform: translateX(0%);
+        }
+
+        #slide2:checked ~ .carousel-inner {
+            animation: none;
+            transform: translateX(-100%);
+        }
+
+        #slide3:checked ~ .carousel-inner {
+            animation: none;
+            transform: translateX(-200%);
+        }
+
+        #slide4:checked ~ .carousel-inner {
+            animation: none;
+            transform: translateX(-300%);
+        }
+
+        /* Automatic Slide Animation */
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            25% { transform: translateX(0%); }
+            30% { transform: translateX(-100%); }
+            50% { transform: translateX(-100%); }
+            55% { transform: translateX(-200%); }
+            75% { transform: translateX(-200%); }
+            80% { transform: translateX(-300%); }
+            100% { transform: translateX(0%); }
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .container img {
+            max-width: 200px;
+            
+            border-radius: 25%; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="Index.html">Home</a>
+        <a href="MyGitHub.html">My GitHub</a>
+        <a href="WorkExp.html">My Work Experience</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    
+    <div class="main-content">
+        
+       
+        <h1>Dylan Esterhuizen</h1>
+        <div class="container" style="margin-left: 44%">
+            <img src="Images/Pro Image.JPG" alt="Profile Picture">
+        </div>
+        <p>This is a Web page dedicated to showcasing my digital CV!</p>
+        <hr>
+        <h1>About me</h1>
+        <p> I am a Second-Year student
+            studying a BCom Informatics at
+            the University of Pretoria. My
+            passions include hockey, video
+            games and mountain biking. I
+            enjoy learning new things and
+            expanding my general
+            knowledge on any information
+            available</p>
+        <hr>
+        <h1>how i would describe myself</h1>
+        <div class="CenterList">
+            <ul>
+                <li class="Traits">Hard working</li>
+                <div class="reveal-section">I am a hardworking individual who puts my all into everything I do, consistently striving for excellence in all areas of my life. To me, hard work means dedicating both time and energy to the tasks at hand, ensuring that I give my best effort no matter the challenge. Whether it's academic projects, professional responsibilities, or personal goals, I approach each task with determination and a focus on achieving the best possible outcome</div>
+        
+                <li class="Traits">Passionate</li>
+                <div class="reveal-section">I am a passionate individual who wholeheartedly invests my energy into the things I care about. Whether it’s my studies, projects, or personal interests, I bring enthusiasm and a deep sense of purpose to everything I do. This passion fuels my drive to constantly improve, learn, and push beyond my limits.</div>
+        
+                <li class="Traits">Caring</li>
+                <div class="reveal-section">I am a genuinely caring person who values the well-being of others. I make a conscious effort to listen, offer support, and help those around me whenever they need it. Whether it's helping a colleague with a task, offering a listening ear to a friend, or contributing to a cause I believe in, I believe in making a positive difference in people’s lives.</div>
+        
+                <!-- Blank row for reveal sections -->
+                <li class="Traits">Diligent</li>
+                <div class="reveal-section">I pay close attention to detail and ensuring that no task is left incomplete. I approach challenges with a methodical mindset, focusing on quality and precision.</div>
+        
+                <li class="Traits">Extrovert</li>
+                <div class="reveal-section">My extroverted nature helps me adapt quickly to new situations, and it allows me to foster a positive and open atmosphere wherever I go, making me a natural fit for team-oriented environments.</div>
+        
+                <li class="Traits">Outgoing</li>
+                <div class="reveal-section">I am an outgoing person who enjoys meeting new people and stepping out of my comfort zone. I believe in embracing new experiences and creating opportunities to connect with others. </div>
+            </ul>
+        </div>
+        <hr>
+        <div >
+            <h1>Competencies</h1>
+            <div class="competencies">
+            <div class="competency-item">
+                <h4>C#</h4>
+                <p style="font-size: large;">
+                    Majority of the skills learnt during my time at the University of Pretoria have been C#. MVC was used for most applications.
+                </p>
+            </div>
+            <div class="competency-item">
+                <h4>CSS, JavaScript & HTML</h4>
+                <p style="font-size: large;">
+                    The focus was on full stack web development, encompassed in this along with the C# was CSS, JavaScript & HTML.
+                </p>
+            </div>
+            <div class="competency-item">
+                <h4>SQL</h4>
+                <p style="font-size: large;">
+                    Advanced database knowledge, using MSSQL
+                </p>
+            </div>
+            <div class="competency-item">
+                <h4>R</h4>
+                <p style="font-size: medium;">
+                    Used for Applications in data science. Basic Machine learning as well as data base implkementation withing R.
+                </p>
+            </div>
+            <div class="competency-item">
+                <h4>MS Excel</h4>
+                <p style="font-size: medium;">
+                    Semi-Advanced Excel knowledge, skills include statistical uses of Excel as well as other mathamatical functions.
+                </p>
+            </div>
+            <div class="competency-item">
+                <h4>Sales Force</h4>
+                <p style="font-size: medium;">
+                    I completed this during my own time as an interest of mine. Rank: Explorer.
+                </p>
+            </div>
+            </div>
+
+        </div>
+        <hr>
+        <div>
+            <h1> Education and achievements</h1>
+            <div class="achievements">
+                <div class="competency-item">
+                    <h4>
+                        <a href="https://krugersdorphigh.co.za/" target="_blank">Krugersdorp High School</a>
+                    </h4>
+                    <h5>Completed matric with a Bachelors Pass</h5>
+                    <h5>Subjects:</h5>
+                    <ul>
+                        <li class="subject-item">Mathematics Core</li>
+                        <li class="subject-item">English HL</li>
+                        <li class="subject-item">Afrikaans FAL</li>
+                        <li class="subject-item">Geography</li>
+                        <li class="subject-item">Tourism</li>
+                        <li class="subject-item">Business Studies</li>
+                        <li class="subject-item">Life Orientation</li>
+                    </ul>
+                    <p style="text-align: start;">2018-2022</p>
+                </div>
+                
+                <div class="competency-item" style="display: flex; flex-direction: column; justify-content: flex-start; text-align: start;">
+                    <h4>
+                        <a href="https://www.up.ac.za/yearbooks/2024/EMS-faculty/UD-programmes/view/07130173" target="_blank">University of Pretoria</a>
+                    </h4>
+                    <h5>BCom Informatics, Information Systems</h5>
+                    <h5>Majors:</h5>
+                    <ul>
+                        <li>Informatics</li>
+                        <li>Business Management</li>
+                    </ul>
+                    <p style="text-align: end;">2023-2025</p>
+                </div>
+                
+                <div class="competency-item" style="display: flex; flex-direction: column; justify-content: flex-start; text-align: center;">
+                    <h4>
+                        <a href="https://www.goldenkey.org/" target="_blank">Golden Key International Honor Society</a>
+                    </h4>
+                    <h5>Achieved in 1st Year (2023)</h5>
+                </div>
+                
+                
+            </div>
+           
+        </div>
+        <hr>
+
+        <!-- Carousel -->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="slide"><img src="Images/Family.jpg" alt="My Family"></div>
+                <div class="slide"><img src="Images/Scout.jpg" alt="Girlfriend"></div>
+                <div class="slide"><img src="Images/Cat.jpg" alt="Me and a Cat"></div>
+                <div class="slide"><img src="Images/Star Trek.jpg" alt="Star Trek"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
